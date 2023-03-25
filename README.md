@@ -3,6 +3,8 @@
 <https://tailwindcss.com/docs/installation>
 
 - 작업 내용
+  - header 반응형 서브메뉴 작업
+
   - @apply 사용하여 중복된 클래스를 하나로 묶어 새로운 클래스 생성 
   - 부모 요소 호버 -> 자식 요소 스타일 적용
   
