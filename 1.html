@@ -8,21 +8,28 @@
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <style type="text/tailwindcss">
+    .submenu {
+      @apply text-center px-[25px] py-[20px] box-border lg:absolute lg:top-[74px] lg:left-2/4 lg:-translate-x-2/4 lg:z-50 lg:bg-white lg:whitespace-nowrap lg:before:w-full lg:before:h-[3px] lg:before:bg-[#0C2340] lg:before:block lg:before:absolute lg:before:left-0 lg:before:top-0 !important;
+    }
+    .mainmenu {
+      @apply p-[25px] block border-b-slate-200 border-solid border-b lg:border-none !important;
+    }
+  </style>
 </head>
 
 <body>
   <div id="wrap" class="w-full">
     <header id="header" class="w-full">
       <div class="inner relative w-10/12 h-14 lg:w-[1374px] lg:h-[77px] m-auto border-box">
-        <h1 class="absolute top-2/4 -translate-y-2/4"><a href="#"><img src="images/logo.png"
-              alt="DLconstruction" class="h-14 lg:h-[77px]"></a></h1>
-        <p class="all-menu absolute right-0 top-2/4 -translate-y-2/4 lg:hidden"><i class="xi-bars"></i></p>
-        <nav class="nav">
-          <ul class="gnb hidden lg:h-[77px] lg:flex lg:justify-end lg:items-center">
+        <h1 class="absolute top-2/4 -translate-y-2/4"><a href="#"><img src="images/logo.png" alt="DLconstruction"
+              class="h-14 lg:h-[77px]"></a></h1>
+        <p class="all-menu absolute right-0 top-2/4 z-50 -translate-y-2/4 lg:hidden"><i class="xi-bars text-2xl"></i></p>
+        <nav class="nav fixed -right-full top-0 z-20 p-4 w-4/5 box-border bg-white h-full text-center duration-500 lg:bg-transparent lg:block lg:static lg:w-full">
+          <ul class="gnb lg:h-[77px] lg:flex lg:justify-end lg:items-center">
             <li class="relative">
-              <a href="#" class="p-[25px]">DL건설 소개</a>
-              <ul
-                class="absolute top-[50px] left-2/4 -translate-x-2/4 z-999 bg-white px-[25px] py-[20px] border-box text-center whitespace-nowrap before:w-full before:h-[3px] before:bg-[#0C2340] block before:absolute before:left-0 before:top-0 before:duration-300 hidden">
+              <a href="#" class="mainmenu">DL건설 소개</a>
+              <ul class="submenu hidden">
                 <li><a href="#">회사소개</a></li>
                 <li class="mt-[10px]"><a href="#">CEO 인사말</a></li>
                 <li class="mt-[10px]"><a href="#">회사연혁</a></li>
@@ -30,9 +37,8 @@
               </ul>
             </li>
             <li class="relative">
-              <a href="#" class="p-[25px]">사업분야</a>
-              <ul
-                class="absolute top-[50px] left-2/4 -translate-x-2/4 z-999 bg-white px-[25px] py-[20px] border-box text-center whitespace-nowrap before:w-full before:h-[3px] before:bg-[#0C2340] block before:absolute before:left-0 before:top-0 before:duration-300 hidden">
+              <a href="#" class="mainmenu">사업분야</a>
+              <ul class="submenu hidden">
                 <li><a href="#">건축사업</a></li>
                 <li class="mt-[10px]"><a href="#">주택사업</a></li>
                 <li class="mt-[10px]"><a href="#">토목사업</a></li>
@@ -40,9 +46,8 @@
               </ul>
             </li>
             <li class="relative">
-              <a href="#" class="p-[25px]">투자정보</a>
-              <ul
-                class="absolute top-[50px] left-2/4 -translate-x-2/4 z-999 bg-white px-[25px] py-[20px] border-box text-center whitespace-nowrap before:w-full before:h-[3px] before:bg-[#0C2340] block before:absolute before:left-0 before:top-0 hidden">
+              <a href="#" class="mainmenu">투자정보</a>
+              <ul class="submenu hidden">
                 <li><a href="#">IR소식</a></li>
                 <li class="mt-[10px]"><a href="#">재무정보</a></li>
                 <li class="mt-[10px]"><a href="#">기업지배구조</a></li>
@@ -51,9 +56,8 @@
               </ul>
             </li>
             <li class="relative">
-              <a href="#" class="p-[25px]">지속가능경영</a>
-              <ul
-                class="absolute top-[50px] left-2/4 -translate-x-2/4 z-999 bg-white px-[25px] py-[20px] border-box text-center whitespace-nowrap before:w-full before:h-[3px] before:bg-[#0C2340] block before:absolute before:left-0 before:top-0 hidden">
+              <a href="#" class="mainmenu">지속가능경영</a>
+              <ul class="submenu hidden">
                 <li><a href="#">정도경영</a></li>
                 <li class="mt-[10px]"><a href="#">품질경영</a></li>
                 <li class="mt-[10px]"><a href="#">환경경영</a></li>
@@ -66,9 +70,8 @@
               </ul>
             </li>
             <li class="relative">
-              <a href="#" class="p-[25px]">홍보센터</a>
-              <ul
-                class="absolute top-[50px] left-2/4 -translate-x-2/4 z-999 bg-white px-[25px] py-[20px] border-box text-center whitespace-nowrap before:w-full before:h-[3px] before:bg-[#0C2340] block before:absolute before:left-0 before:top-0 hidden">
+              <a href="#" class="mainmenu">홍보센터</a>
+              <ul class="submenu hidden">
                 <li><a href="#">회사소식</a></li>
                 <li class="mt-[10px]"><a href="#">연구실적</a></li>
                 <li class="mt-[10px]"><a href="#">CI/BI</a></li>
@@ -76,9 +79,8 @@
               </ul>
             </li>
             <li class="relative">
-              <a href="#" class="p-[25px]">인재채용</a>
-              <ul
-                class="absolute top-[50px] left-2/4 -translate-x-2/4 z-999 bg-white px-[25px] py-[20px] border-box text-center whitespace-nowrap before:w-full before:h-[3px] before:bg-[#0C2340] block before:absolute before:left-0 before:top-0 hidden">
+              <a href="#" class="mainmenu">인재채용</a>
+              <ul class="submenu hidden">
                 <li><a href="#">채용정보</a></li>
                 <li class="mt-[10px]"><a href="#">채용 FAQ</a></li>
                 <li class="mt-[10px]"><a href="#">전자근로계약</a></li>
@@ -86,12 +88,13 @@
             </li>
           </ul>
         </nav>
-
+        <span class="block w-screen h-screen fixed left-0 top-0 z-0 bg-black/30 hidden lg:hidden"></span>
       </div>
 
     </header>
     <!-- //header -->
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
